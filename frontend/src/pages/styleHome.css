@@ -3,22 +3,25 @@
     /* box-shadow: 12px 0px 10px 0px rgb(0, 0, 0) inset; */
     padding: 10px;
     overflow: hidden;
+    display: flex;
+    position: relative;
 }
 .banner-container{
     display: flex;
     gap: 8rem;
+    /* justify-content: space-around; */
     /* background-color: black; */
-    /* padding: 5rem; */
-    animation: marquee 5s linear infinite;
-    /* position: relative; */
+    padding: 3rem;
+    animation: marquee 20s linear infinite;
+    position: relative;
 }:hover{
     animation-play-state: paused;
 }
 .banner-container>img{
-    width: 15rem;
-    height: 15rem;
+    width: 12rem;
+    height: 12rem;
 }
 @keyframes marquee {
 	0%   { transform: translateX(0%); }
-	100% { transform: translateX(-100%); }
+	100% { transform: translateX(-200%); }
 }
